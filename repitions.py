@@ -1,6 +1,9 @@
-ans = 1
-streak = input()
-for i in streak:
-    if streak[i] ==  streak[i+1]:
-        ans += 1
-print(ans)        
+def repetitons_calculator(string):
+    count = 1
+    for i in range(1, len(string)):
+        if string[i] == string[i-1]:
+            count += 1
+        
+    print(count)
+
+repetitons_calculator(str(input()))
